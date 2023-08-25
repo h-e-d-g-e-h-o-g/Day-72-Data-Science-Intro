@@ -1,0 +1,26 @@
+To see the number of rows and column in the dataframe, we use "shape" attribute of the dataframe object.
+We can access the names of columns of dataframe object, through "columns" attribute of the dataframe object.
+NaN values are Not a Number values are blank cells or cells that contain strings instead of numbers.
+We can check the NaN data through "isna()" method.
+It lists down the data in the form of True and False.
+The cell in which there is True, then it contains "NaN" values.
+We use "dropna()" method on the dataframe to drop the rows with NaN values.
+We create a clean dataframe on the basis of it.
+To access a particular column on the dataframe, we can use square bracket notation.
+To find the maximum value in a particular column, we can use max() method.
+"idxmax()" method is used to get the index of the row in which the selected column is at its highest.
+We can use "loc" property to select the row and column on the basis of the index.
+syntax:- loc[index].
+Quantile is a statistical concept that often represents a value below than the certain proportion of the data.
+sort_values() method is used to sort the data of dataframe on the basis of a certain column.
+It creates a new dataframe with the sorted data.
+NOTE:- If I am interested or want to know the data of a certain columns.
+We can use the list and pass the name of the required columns in it as its elements.
+"groupby()" method is used to group the rows on the basis of a certain categories/groups.
+syntax:- df.groupby("name_of_group") gives me groupby object.
+To view how many elements, it has under it, you need to use count() method on it.
+NOTE:- pd.options.display.float_format = '{:,.2f}'.format 
+Here, pd.options.display.float_format is a pandas option that controls the floating point number formatting 
+in the dataframe output.
+{:,.2f} represents ":" beginning of the format specifier, "," represents the value should be thousands separated.
+".2f" represents only two digits are allowed after the decimal point.
